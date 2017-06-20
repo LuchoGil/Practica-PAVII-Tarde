@@ -1,0 +1,3 @@
+  <connectionStrings>
+    <add name="PymesEntities" connectionString="metadata=res://*/Pymes.csdl|res://*/Pymes.ssdl|res://*/Pymes.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=maquis;initial catalog=Pymes;persist security info=True;user id=avisuales2;password=avisuales2;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>

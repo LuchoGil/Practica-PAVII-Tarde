@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PymesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="IdArticulo" />
+    </Key>
+    <Property Name="IdArticulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CodigoDeBarra" Type="String" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Name="IdArticuloFamilia" Type="Int32" />
+    <Property Name="stock" Type="Int32" />
+    <Property Name="Activo" Type="Boolean" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="PymesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Articulos" EntityType="Self.Articulo" />
+    <EntitySet Name="ArticulosFamilias" EntityType="PymesModel.ArticulosFamilia" />
+    <EntitySet Name="AuditoriasABMs" EntityType="PymesModel.AuditoriasABM" />
+    <EntitySet Name="Categorias" EntityType="PymesModel.Categoria" />
+    <EntitySet Name="Clientes" EntityType="PymesModel.Cliente" />
+    <EntitySet Name="Contactos" EntityType="PymesModel.Contacto" />
+    <EntitySet Name="Departamentos" EntityType="PymesModel.Departamento" />
+    <EntitySet Name="Empresas" EntityType="PymesModel.Empresa" />
+    <EntitySet Name="EstadosCiviles" EntityType="PymesModel.EstadosCivile" />
+    <EntitySet Name="Grupos" EntityType="PymesModel.Grupos" />
+    <EntitySet Name="GruposPermisos" EntityType="PymesModel.GruposPermiso" />
+    <EntitySet Name="IvasTipos" EntityType="PymesModel.IvasTipos" />
+    <EntitySet Name="Menus" EntityType="PymesModel.Menu" />
+    <EntitySet Name="Paises" EntityType="PymesModel.Pais" />
+    <EntitySet Name="Permisos" EntityType="PymesModel.Permiso" />
+    <EntitySet Name="Personas" EntityType="PymesModel.Persona" />
+    <EntitySet Name="Provincias" EntityType="PymesModel.Provincia" />
+    <EntitySet Name="Sesiones" EntityType="PymesModel.Sesione" />
+    <EntitySet Name="Sexos" EntityType="PymesModel.Sexo" />
+    <EntitySet Name="TelefonoXClientes" EntityType="PymesModel.TelefonoXCliente" />
+    <EntitySet Name="TiposDocumentos" EntityType="PymesModel.TiposDocumento" />
+    <EntitySet Name="Usuarios" EntityType="PymesModel.Usuario" />
+    <EntitySet Name="UsuariosGrupos" EntityType="PymesModel.UsuariosGrupos" />
+    <EntitySet Name="Ventas" EntityType="PymesModel.Venta" />
+    <EntitySet Name="VentasDetalles" EntityType="PymesModel.VentasDetalle" />
+    <AssociationSet Name="FK_Clientes_Departamentos" Association="PymesModel.FK_Clientes_Departamentos">
+      <End Role="Departamento" EntitySet="Departamentos" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_EstadosCiviles" Association="PymesModel.FK_Clientes_EstadosCiviles">
+      <End Role="EstadosCivile" EntitySet="EstadosCiviles" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Paises" Association="PymesModel.FK_Clientes_Paises">
+      <End Role="Pais" EntitySet="Paises" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Provincias" Association="PymesModel.FK_Clientes_Provincias">
+      <End Role="Provincia" EntitySet="Provincias" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Sexos" Association="PymesModel.FK_Clientes_Sexos">
+      <End Role="Sexo" EntitySet="Sexos" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_TiposDocumentos" Association="PymesModel.FK_Clientes_TiposDocumentos">
+      <End Role="TiposDocumento" EntitySet="TiposDocumentos" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_ClienteId" Association="PymesModel.FK_Ventas_ClienteId">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ArticulosFamilia">
+    <Key>
+      <PropertyRef Name="IdArticuloFamilia" />
+    </Key>
+    <Property Name="IdArticuloFamilia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AuditoriasABM">
+    <Key>
+      <PropertyRef Name="IdAuditoriaABM" />
+    </Key>
+    <Property Name="IdAuditoriaABM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Tabla" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdRegistro" Type="Int32" />
+    <Property Name="AccionABM" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdSession" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="Cuit" Type="Int64" />
+    <Property Name="IdTipoDocumento" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroDocumento" Type="Int64" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="3" />
+    <Property Name="IdSexo" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="IdEstadoCivil" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="Calle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroCalle" Type="Int32" />
+    <Property Name="Localidad" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="IdDepartamento" Type="Int32" />
+    <Property Name="IdProvincia" Type="Int32" />
+    <Property Name="IdPais" Type="Int32" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="3" />
+    <Property Name="FechaEgreso" Type="DateTime" Precision="3" />
+    <Property Name="TieneTrabajo" Type="Boolean" />
+    <Property Name="TieneAuto" Type="Boolean" />
+    <Property Name="TieneCasa" Type="Boolean" />
+    <Property Name="CreditoMaximo" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Clave" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="IdUsuario" Type="Int32" />
+    <NavigationProperty Name="Departamento" Relationship="PymesModel.FK_Clientes_Departamentos" FromRole="Cliente" ToRole="Departamento" />
+    <NavigationProperty Name="EstadosCivile" Relationship="PymesModel.FK_Clientes_EstadosCiviles" FromRole="Cliente" ToRole="EstadosCivile" />
+    <NavigationProperty Name="Pais" Relationship="PymesModel.FK_Clientes_Paises" FromRole="Cliente" ToRole="Pais" />
+    <NavigationProperty Name="Provincia" Relationship="PymesModel.FK_Clientes_Provincias" FromRole="Cliente" ToRole="Provincia" />
+    <NavigationProperty Name="Sexo" Relationship="PymesModel.FK_Clientes_Sexos" FromRole="Cliente" ToRole="Sexo" />
+    <NavigationProperty Name="TiposDocumento" Relationship="PymesModel.FK_Clientes_TiposDocumentos" FromRole="Cliente" ToRole="TiposDocumento" />
+    <NavigationProperty Name="Ventas" Relationship="PymesModel.FK_Ventas_ClienteId" FromRole="Cliente" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="IdContacto" />
+    </Key>
+    <Property Name="IdContacto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="3" />
+    <Property Name="Telefono" Type="Int32" />
+    <Property Name="IdCategoria" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="IdDepartamento" />
+    </Key>
+    <Property Name="IdDepartamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Clientes" Relationship="PymesModel.FK_Clientes_Departamentos" FromRole="Departamento" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="IdEmpresa" />
+    </Key>
+    <Property Name="IdEmpresa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="CantidadEmpleados" Type="Int32" Nullable="false" />
+    <Property Name="FechaFundacion" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="EstadosCivile">
+    <Key>
+      <PropertyRef Name="IdEstadoCivil" />
+    </Key>
+    <Property Name="IdEstadoCivil" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Clientes" Relationship="PymesModel.FK_Clientes_EstadosCiviles" FromRole="EstadosCivile" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Grupos">
+    <Key>
+      <PropertyRef Name="IdGrupo" />
+    </Key>
+    <Property Name="IdGrupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GruposPermiso">
+    <Key>
+      <PropertyRef Name="IdGrupo" />
+      <PropertyRef Name="IdPermiso" />
+    </Key>
+    <Property Name="IdGrupo" Type="Int32" Nullable="false" />
+    <Property Name="IdPermiso" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IvasTipos">
+    <Key>
+      <PropertyRef Name="IvaTipoId" />
+    </Key>
+    <Property Name="IvaTipoId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="RowVersion" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="IdMenu" />
+    </Key>
+    <Property Name="IdMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Url" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdMenuPadre" Type="Int32" />
+    <Property Name="Orden" Type="Byte" />
+    <Property Name="IdPermiso" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="IdPais" />
+    </Key>
+    <Property Name="IdPais" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Poblacion" Type="Int32" />
+    <Property Name="Continente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Clientes" Relationship="PymesModel.FK_Clientes_Paises" FromRole="Pais" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Permiso">
+    <Key>
+      <PropertyRef Name="IdPermisos" />
+    </Key>
+    <Property Name="IdPermisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="IdPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="IdProvincia" />
+    </Key>
+    <Property Name="IdProvincia" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Clientes" Relationship="PymesModel.FK_Clientes_Provincias" FromRole="Provincia" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Sesione">
+    <Key>
+      <PropertyRef Name="IdSesion" />
+    </Key>
+    <Property Name="IdSesion" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Maquina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaInicio" Type="DateTime" Precision="3" />
+    <Property Name="FechaFin" Type="DateTime" Precision="3" />
+    <Property Name="IdUsuario" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Sexo">
+    <Key>
+      <PropertyRef Name="IdSexo" />
+    </Key>
+    <Property Name="IdSexo" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="Nombre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Clientes" Relationship="PymesModel.FK_Clientes_Sexos" FromRole="Sexo" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="TelefonoXCliente">
+    <Key>
+      <PropertyRef Name="IdTelefono" />
+    </Key>
+    <Property Name="IdTelefono" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="Int32" Nullable="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TiposDocumento">
+    <Key>
+      <PropertyRef Name="IdTipoDocumento" />
+    </Key>
+    <Property Name="IdTipoDocumento" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Clientes" Relationship="PymesModel.FK_Clientes_TiposDocumentos" FromRole="TiposDocumento" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Clave" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Bloqueado" Type="Boolean" />
+    <Property Name="IdRegistroRelacion" Type="Int32" />
+    <Property Name="IdTablaRelacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UsuariosGrupos">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="IdGrupo" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IdGrupo" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="IdVenta" />
+    </Key>
+    <Property Name="IdVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Cliente" Relationship="PymesModel.FK_Ventas_ClienteId" FromRole="Venta" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="VentasDetalle">
+    <Key>
+      <PropertyRef Name="IdVentaDetalle" />
+    </Key>
+    <Property Name="IdVentaDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdVenta" Type="Int32" Nullable="false" />
+    <Property Name="IdArticulo" Type="Int32" />
+    <Property Name="Cantidad" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="FK_Clientes_Departamentos">
+    <End Type="PymesModel.Departamento" Role="Departamento" Multiplicity="0..1" />
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="IdDepartamento" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdDepartamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_EstadosCiviles">
+    <End Type="PymesModel.EstadosCivile" Role="EstadosCivile" Multiplicity="0..1" />
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadosCivile">
+        <PropertyRef Name="IdEstadoCivil" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdEstadoCivil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Paises">
+    <End Type="PymesModel.Pais" Role="Pais" Multiplicity="0..1" />
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="IdPais" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Provincias">
+    <End Type="PymesModel.Provincia" Role="Provincia" Multiplicity="0..1" />
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="IdProvincia" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Sexos">
+    <End Type="PymesModel.Sexo" Role="Sexo" Multiplicity="0..1" />
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sexo">
+        <PropertyRef Name="IdSexo" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdSexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_TiposDocumentos">
+    <End Type="PymesModel.TiposDocumento" Role="TiposDocumento" Multiplicity="0..1" />
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TiposDocumento">
+        <PropertyRef Name="IdTipoDocumento" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_ClienteId">
+    <End Type="PymesModel.Cliente" Role="Cliente" Multiplicity="0..1" />
+    <End Type="PymesModel.Venta" Role="Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

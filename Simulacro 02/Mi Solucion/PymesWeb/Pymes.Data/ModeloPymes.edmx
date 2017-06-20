@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PymesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+          </Key>
+          <Property Name="IdCliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nchar" MaxLength="40" Nullable="false" />
+          <Property Name="Cuit" Type="bigint" />
+          <Property Name="IdTipoDocumento" Type="nvarchar" MaxLength="3" />
+          <Property Name="NumeroDocumento" Type="bigint" />
+          <Property Name="FechaNacimiento" Type="datetime" />
+          <Property Name="IdSexo" Type="nchar" MaxLength="1" />
+          <Property Name="IdEstadoCivil" Type="nchar" MaxLength="1" />
+          <Property Name="Calle" Type="nvarchar" MaxLength="50" />
+          <Property Name="NumeroCalle" Type="int" />
+          <Property Name="Localidad" Type="nchar" MaxLength="255" />
+          <Property Name="IdDepartamento" Type="int" />
+          <Property Name="IdProvincia" Type="int" />
+          <Property Name="IdPais" Type="int" />
+          <Property Name="FechaIngreso" Type="datetime" />
+          <Property Name="FechaEgreso" Type="datetime" />
+          <Property Name="TieneTrabajo" Type="bit" />
+          <Property Name="TieneAuto" Type="bit" />
+          <Property Name="TieneCasa" Type="bit" />
+          <Property Name="CreditoMaximo" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Clave" Type="nvarchar" MaxLength="15" />
+          <Property Name="IdUsuario" Type="int" />
+        </EntityType>
+        <EntityContainer Name="PymesModelStoreContainer">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PymesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PymesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="PymesModel.Cliente" />
+        </EntityContainer>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+          </Key>
+          <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="40" FixedLength="true" Unicode="true" />
+          <Property Name="Cuit" Type="Int64" />
+          <Property Name="IdTipoDocumento" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="NumeroDocumento" Type="Int64" />
+          <Property Name="FechaNacimiento" Type="DateTime" Precision="3" />
+          <Property Name="IdSexo" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="IdEstadoCivil" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="Calle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NumeroCalle" Type="Int32" />
+          <Property Name="Localidad" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+          <Property Name="IdDepartamento" Type="Int32" />
+          <Property Name="IdProvincia" Type="Int32" />
+          <Property Name="IdPais" Type="Int32" />
+          <Property Name="FechaIngreso" Type="DateTime" Precision="3" />
+          <Property Name="FechaEgreso" Type="DateTime" Precision="3" />
+          <Property Name="TieneTrabajo" Type="Boolean" />
+          <Property Name="TieneAuto" Type="Boolean" />
+          <Property Name="TieneCasa" Type="Boolean" />
+          <Property Name="CreditoMaximo" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Clave" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="IdUsuario" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PymesModelStoreContainer" CdmEntityContainer="PymesEntities">
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="PymesModel.Cliente">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="Clave" ColumnName="Clave" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="CreditoMaximo" ColumnName="CreditoMaximo" />
+                <ScalarProperty Name="TieneCasa" ColumnName="TieneCasa" />
+                <ScalarProperty Name="TieneAuto" ColumnName="TieneAuto" />
+                <ScalarProperty Name="TieneTrabajo" ColumnName="TieneTrabajo" />
+                <ScalarProperty Name="FechaEgreso" ColumnName="FechaEgreso" />
+                <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+                <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+                <ScalarProperty Name="IdProvincia" ColumnName="IdProvincia" />
+                <ScalarProperty Name="IdDepartamento" ColumnName="IdDepartamento" />
+                <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+                <ScalarProperty Name="NumeroCalle" ColumnName="NumeroCalle" />
+                <ScalarProperty Name="Calle" ColumnName="Calle" />
+                <ScalarProperty Name="IdEstadoCivil" ColumnName="IdEstadoCivil" />
+                <ScalarProperty Name="IdSexo" ColumnName="IdSexo" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="NumeroDocumento" ColumnName="NumeroDocumento" />
+                <ScalarProperty Name="IdTipoDocumento" ColumnName="IdTipoDocumento" />
+                <ScalarProperty Name="Cuit" ColumnName="Cuit" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

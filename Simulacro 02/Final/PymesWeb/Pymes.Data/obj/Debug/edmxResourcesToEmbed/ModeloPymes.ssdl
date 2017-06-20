@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PymesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nchar" MaxLength="40" Nullable="false" />
+    <Property Name="Cuit" Type="bigint" />
+    <Property Name="IdTipoDocumento" Type="nvarchar" MaxLength="3" />
+    <Property Name="NumeroDocumento" Type="bigint" />
+    <Property Name="FechaNacimiento" Type="datetime" />
+    <Property Name="IdSexo" Type="nchar" MaxLength="1" />
+    <Property Name="IdEstadoCivil" Type="nchar" MaxLength="1" />
+    <Property Name="Calle" Type="nvarchar" MaxLength="50" />
+    <Property Name="NumeroCalle" Type="int" />
+    <Property Name="Localidad" Type="nchar" MaxLength="255" />
+    <Property Name="IdDepartamento" Type="int" />
+    <Property Name="IdProvincia" Type="int" />
+    <Property Name="IdPais" Type="int" />
+    <Property Name="FechaIngreso" Type="datetime" />
+    <Property Name="FechaEgreso" Type="datetime" />
+    <Property Name="TieneTrabajo" Type="bit" />
+    <Property Name="TieneAuto" Type="bit" />
+    <Property Name="TieneCasa" Type="bit" />
+    <Property Name="CreditoMaximo" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="Clave" Type="nvarchar" MaxLength="15" />
+    <Property Name="IdUsuario" Type="int" />
+  </EntityType>
+  <EntityContainer Name="PymesModelStoreContainer">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

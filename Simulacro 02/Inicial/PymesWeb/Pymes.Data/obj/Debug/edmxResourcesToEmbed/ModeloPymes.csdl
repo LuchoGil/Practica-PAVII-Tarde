@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PymesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PymesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="PymesModel.Cliente" />
+  </EntityContainer>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="Cuit" Type="Int64" />
+    <Property Name="IdTipoDocumento" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroDocumento" Type="Int64" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="3" />
+    <Property Name="IdSexo" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="IdEstadoCivil" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="Calle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroCalle" Type="Int32" />
+    <Property Name="Localidad" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="IdDepartamento" Type="Int32" />
+    <Property Name="IdProvincia" Type="Int32" />
+    <Property Name="IdPais" Type="Int32" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="3" />
+    <Property Name="FechaEgreso" Type="DateTime" Precision="3" />
+    <Property Name="TieneTrabajo" Type="Boolean" />
+    <Property Name="TieneAuto" Type="Boolean" />
+    <Property Name="TieneCasa" Type="Boolean" />
+    <Property Name="CreditoMaximo" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Clave" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="IdUsuario" Type="Int32" />
+  </EntityType>
+</Schema>

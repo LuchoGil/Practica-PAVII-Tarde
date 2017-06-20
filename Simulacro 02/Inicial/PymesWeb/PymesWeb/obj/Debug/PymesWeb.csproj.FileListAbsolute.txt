@@ -1,0 +1,39 @@
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\PymesWeb.dll.config
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\PymesWeb.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\PymesWeb.pdb
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\Newtonsoft.Json.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\Pymes.Data.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\System.Net.Http.Formatting.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\System.Web.Http.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\System.Web.Http.WebHost.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\EntityFramework.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\Pymes.Data.pdb
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\Newtonsoft.Json.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\System.Net.Http.Formatting.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\System.Web.Http.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\System.Web.Http.WebHost.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\bin\EntityFramework.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\obj\Debug\PymesWeb.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\obj\Debug\PymesWeb.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\PymesWeb\obj\Debug\PymesWeb.pdb
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\PymesWeb.dll.config
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\PymesWeb.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\PymesWeb.pdb
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\EntityFramework.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\Newtonsoft.Json.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\Pymes.Data.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\System.Net.Http.Formatting.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\System.Web.Http.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\System.Web.Http.WebHost.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\Pymes.Data.pdb
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\Pymes.Data.dll.config
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\EntityFramework.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\Newtonsoft.Json.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\System.Net.Http.Formatting.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\System.Web.Http.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\bin\System.Web.Http.WebHost.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\obj\Debug\PymesWeb.csprojResolveAssemblyReference.cache
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\obj\Debug\PymesWeb.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\PymesWeb\obj\Debug\PymesWeb.pdb

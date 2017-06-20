@@ -1,0 +1,10 @@
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\Pymes.Datos.dll.config
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\Pymes.Datos.dll
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\Pymes.Datos.pdb
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\EntityFramework.dll
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\EntityFramework.xml
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\obj\Debug\Pymes.Datos.dll
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\obj\Debug\Pymes.Datos.pdb
+D:\EjercitacionTipoParcial\Inicial\Pymes\Pymes.Datos\obj\Debug\Pymes.Datos.csprojResolveAssemblyReference.cache

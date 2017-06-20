@@ -1,0 +1,20 @@
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\Pymes.Data.dll.config
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\Pymes.Data.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\Pymes.Data.pdb
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\obj\Debug\Pymes.Data.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\obj\Debug\Pymes.Data.dll
+C:\Desarrollo\Repositorios\Demo_y_ejercicios\Parciales\Simulacro 02\PymesWeb\Pymes.Data\obj\Debug\Pymes.Data.pdb
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\Pymes.Data.dll.config
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\Pymes.Data.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\Pymes.Data.pdb
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\obj\Debug\Pymes.Data.csprojResolveAssemblyReference.cache
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\obj\Debug\Pymes.Data.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 02\Inicial\PymesWeb\Pymes.Data\obj\Debug\Pymes.Data.pdb

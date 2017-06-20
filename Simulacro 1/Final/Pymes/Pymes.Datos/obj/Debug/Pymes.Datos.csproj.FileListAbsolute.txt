@@ -1,0 +1,10 @@
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\Pymes.Datos.dll.config
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\Pymes.Datos.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\Pymes.Datos.pdb
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\EntityFramework.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\EntityFramework.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\obj\Debug\Pymes.Datos.csprojResolveAssemblyReference.cache
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\obj\Debug\Pymes.Datos.dll
+C:\Users\Lu\Google Drive\U\4to Año\PAVII\Simulacros 1 y 2\Simulacro 1\Final\Pymes\Pymes.Datos\obj\Debug\Pymes.Datos.pdb
